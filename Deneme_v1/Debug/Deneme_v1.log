@@ -1,0 +1,4 @@
+﻿  Kalman.c
+c:\users\berkenutku\desktop\proje_433\deneme_v1\kalman.c(13): warning C4101: 'X_pred': unreferenced local variable
+c:\users\berkenutku\desktop\proje_433\deneme_v1\kalman.c(14): warning C4101: 'X': unreferenced local variable
+  Deneme_v1.vcxproj -> C:\Users\berkenutku\Desktop\proje_433\Deneme_v1\Debug\Deneme_v1.exe
