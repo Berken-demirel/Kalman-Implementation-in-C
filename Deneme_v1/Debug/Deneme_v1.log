@@ -1,4 +1,7 @@
 ﻿  Kalman.c
-c:\users\berkenutku\desktop\proje_433\deneme_v1\kalman.c(13): warning C4101: 'X_pred': unreferenced local variable
-c:\users\berkenutku\desktop\proje_433\deneme_v1\kalman.c(14): warning C4101: 'X': unreferenced local variable
-  Deneme_v1.vcxproj -> C:\Users\berkenutku\Desktop\proje_433\Deneme_v1\Debug\Deneme_v1.exe
+c:\users\berkenutku\desktop\proje_433\kalman-implementation-in-c\deneme_v1\kalman.c(232): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\berkenutku\desktop\proje_433\kalman-implementation-in-c\deneme_v1\kalman.c(233): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\berkenutku\desktop\proje_433\kalman-implementation-in-c\deneme_v1\kalman.c(234): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\berkenutku\desktop\proje_433\kalman-implementation-in-c\deneme_v1\kalman.c(235): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\berkenutku\desktop\proje_433\kalman-implementation-in-c\deneme_v1\kalman.c(276): warning C4013: 'system' undefined; assuming extern returning int
+  Deneme_v1.vcxproj -> C:\Users\berkenutku\Desktop\proje_433\Kalman-Implementation-in-C\Deneme_v1\Debug\Deneme_v1.exe
