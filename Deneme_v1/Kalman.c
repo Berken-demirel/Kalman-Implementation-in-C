@@ -1,10 +1,16 @@
+#include <ansi_c.h>
 #include <stdio.h>
+#include <utility.h>
 
 
 // x_k,y_k are the measured position in x and y directions at time k.
 
+int __cdecl DLLHeader(void)
+{
+	return 1;
+}
 
-main()
+void __declspec(dllexport) my_kalman(int measured_x, int measured_y)
 {
 	// Define constant matrices
 	int A[4][4];
@@ -51,13 +57,13 @@ main()
 	}
 
 	// Simulate the loop for real-time
-	for (int i = 0; i < 100; i++)
+	for (int i = 0; i < 1; i++)
 	{
-		printf("Measured x location = %d\n", Z[0][0]);
-		printf("Measured y location = %d\n", Z[0][1]);
+		//printf("Measured x location = %d\n", Z[0][0]);
+		//printf("Measured y location = %d\n", Z[0][1]);
 
-		Z[0][0] += i; // Increase the measured x position with 1 
-		Z[1][0] += i + 2; // No change for measured y position
+		Z[0][0] = measured_x; // measured_x 
+		Z[1][0] = measured_y; // measured_y
 
 		//------------------------Update State prediction  (equation 1 in pdf)--------------
 		for (int i = 0; i < 4; i++)
@@ -272,7 +278,5 @@ main()
 		printf("predicted y location  = %d \n \n", X_pred[1][0]);
 
 	}
-
-	system("pause");
 
 }
