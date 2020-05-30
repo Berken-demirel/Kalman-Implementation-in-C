@@ -1,4 +1,4 @@
 # Kalman-Implementation-in-C
 
 
-![](For-demo.gif)
+![](Front-panel.gif)
